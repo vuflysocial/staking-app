@@ -58,7 +58,7 @@ useEffect(() => {
         <h1>My Like Melo:</h1>
         <div>
           {myMeloNFTs?.map((nft) => (
-            <div>
+            <div key={nft.metadata.id}>
               <h3>{nft.metadata.name}</h3>
               <ThirdwebNftMedia
                metadata={nft.metadata}
